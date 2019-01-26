@@ -4,11 +4,15 @@ import (
 	"time"
 )
 
+// ControlType designates type of BeatStep control.
 type ControlType int
 
 const (
+	// UnrecognizedState reperesents unrecognized control.
 	UnrecognizedState ControlType = iota
+	// EncoderState represents encoder (knob) control.
 	EncoderState
+	// PadState represents pad control.
 	PadState
 )
 
